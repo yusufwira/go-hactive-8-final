@@ -1,0 +1,691 @@
+{
+	"info": {
+		"_postman_id": "ed92caa2-1fbb-4a6c-919b-c7d6459cde61",
+		"name": "Final Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8533960",
+		"_collection_link": "https://speeding-trinity-804861.postman.co/workspace/golang~552d5b89-7ee7-482b-a24a-b4a256169407/collection/8533960-ed92caa2-1fbb-4a6c-919b-c7d6459cde61?action=share&source=collection_link&creator=8533960"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"yusuf\",\n    \"password\": \"12345\",\n    \"email\": \"yusuf@ymail.com\",\n    \"age\": 24\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/user/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"yusuf\",\n    \"password\": \"Yusuf1997\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Photo",
+			"item": [
+				{
+					"name": "Get All Photo",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inl1c3VmQHltYWlsLmNvbSIsImlkIjoyfQ.dpZ0VDxD0q7qkiYcTewHTT8CFbgijCzGD7Jh6lvj5ljj-y5DAHSyeZmt2sTJmoTB8uIZHbQtok3I8GXR5vy0Qw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\":\"Laraz12\",\n    \"photo_url\":\"asdasd.com\",\n    \"caption\":\"lasdlaldasdasd\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/photo/getAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"photo",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get One Photo",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inl1c3VmQHltYWlsLmNvbSIsImlkIjoyfQ.dpZ0VDxD0q7qkiYcTewHTT8CFbgijCzGD7Jh6lvj5ljj-y5DAHSyeZmt2sTJmoTB8uIZHbQtok3I8GXR5vy0Qw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\":\"Laraz12\",\n    \"photo_url\":\"asdasd.com\",\n    \"caption\":\"lasdlaldasdasd\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/photo/get/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"photo",
+								"get",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Photo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inl1c3VmQHltYWlsLmNvbSIsImlkIjoyfQ.5gY6lO5PmM99zQUtuNQBUbwawKGmCObDLH2tSk1NehwofqBaDOMnhMa6Abbfxe0A_6wuqJvZbzzSjtzBUhJOIA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\":\"Testing Photo Baru\",\n    \"photo_url\":\"testing.com\",\n    \"caption\":\"sssss\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/photo/createPhoto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"photo",
+								"createPhoto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Photo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inl1c3VmQHltYWlsLmNvbSIsImlkIjoyfQ.5gY6lO5PmM99zQUtuNQBUbwawKGmCObDLH2tSk1NehwofqBaDOMnhMa6Abbfxe0A_6wuqJvZbzzSjtzBUhJOIA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\":\"Testing Final edit\",\n    \"photo_url\":\"final.com\",\n    \"caption\":\"ffffff\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/photo/updatePhoto/9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"photo",
+								"updatePhoto",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Photo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inl1c3VmQHltYWlsLmNvbSIsImlkIjoyfQ.tWfOHwujxoKnHHGiUgBppR0z7PIrBhsQXOohlXAUWnujwV_tcHZw0WGsoXIQJrxZ9py-pr8S7927GPCfL2KDWQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/photo/deletePhoto/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"photo",
+								"deletePhoto",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sosial Media",
+			"item": [
+				{
+					"name": "Get All Sosmed",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inl1c3VmQHltYWlsLmNvbSIsImlkIjoyfQ.dpZ0VDxD0q7qkiYcTewHTT8CFbgijCzGD7Jh6lvj5ljj-y5DAHSyeZmt2sTJmoTB8uIZHbQtok3I8GXR5vy0Qw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\":\"Laraz12\",\n    \"photo_url\":\"asdasd.com\",\n    \"caption\":\"lasdlaldasdasd\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/sosmed/getAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"sosmed",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get One Sosmed",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inl1c3VmQHltYWlsLmNvbSIsImlkIjoyfQ.dpZ0VDxD0q7qkiYcTewHTT8CFbgijCzGD7Jh6lvj5ljj-y5DAHSyeZmt2sTJmoTB8uIZHbQtok3I8GXR5vy0Qw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\":\"Laraz12\",\n    \"photo_url\":\"asdasd.com\",\n    \"caption\":\"lasdlaldasdasd\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/sosmed/get/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"sosmed",
+								"get",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Sosmed",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inl1c3VmQHltYWlsLmNvbSIsImlkIjoyfQ.2XnTq8If7RbRMfaiJR1SsNWyIdGZ2JK7bLBFX3_uS1jOcxIaMa5Q6KLXFfCEbZJ5h0nKtItM1Nmop66tQcfrGA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Testing Photo Baru\",\n    \"social_media_url\":\"testing.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/sosmed/createSocialMedia",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"sosmed",
+								"createSocialMedia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Sosmed",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inl1c3VmQHltYWlsLmNvbSIsImlkIjoyfQ.YamrthLWtwq12pW0kQSDYdgWfJTXqtMwxkGex0HD0kPMtGwpfgkJcM9soDFmED1adFq0E3oXijR1WTqj6idYKw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Testing Photo Baru lalala\",\n    \"social_media_url\":\"testing.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/sosmed/updateSocialMedia/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"sosmed",
+								"updateSocialMedia",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Sosmed",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inl1c3VmQHltYWlsLmNvbSIsImlkIjoyfQ.SR4cSgRuAJGIAVVFi-ZIEqKQM9nvkcReXIniXWofDyZOArIscmcFE1ryZjecFMEBhzMbTMolxbRNuOLJ8vAsIQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/sosmed/deleteSocialMedia/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"sosmed",
+								"deleteSocialMedia",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comment",
+			"item": [
+				{
+					"name": "Get All Comment",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inl1c3VmQHltYWlsLmNvbSIsImlkIjoyfQ.dpZ0VDxD0q7qkiYcTewHTT8CFbgijCzGD7Jh6lvj5ljj-y5DAHSyeZmt2sTJmoTB8uIZHbQtok3I8GXR5vy0Qw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\":\"Laraz12\",\n    \"photo_url\":\"asdasd.com\",\n    \"caption\":\"lasdlaldasdasd\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/comment/getAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"comment",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get One Comment",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inl1c3VmQHltYWlsLmNvbSIsImlkIjoyfQ.dpZ0VDxD0q7qkiYcTewHTT8CFbgijCzGD7Jh6lvj5ljj-y5DAHSyeZmt2sTJmoTB8uIZHbQtok3I8GXR5vy0Qw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\":\"Laraz12\",\n    \"photo_url\":\"asdasd.com\",\n    \"caption\":\"lasdlaldasdasd\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/comment/get/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"comment",
+								"get",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Comment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inl1c3VmQHltYWlsLmNvbSIsImlkIjoyfQ.cn3BYp80pqg2YAu8Sjb-8wP9HEwElUx2ZQZfXhvrWDVi-uU4Y13Atdeb2wUmcE4fFiZLdq3OoW25WCejZrU4vA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"message\":\"asdasd adsadasd asda asdasds\",\n    \"photo_id\":7\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/comment/createComment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"comment",
+								"createComment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Comment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inl1c3VmQHltYWlsLmNvbSIsImlkIjoyfQ.ykb9RPuOizhYHn-kaWFW8S8MkTCLg-NRF99cVnFsRyaJiDT21KZSrpYsgsXqtPH6DhnrUiu_9l4he2KI-Pp6ew",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"message\":\"asdasd adsadasd asda edit\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/comment/updateComment/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"comment",
+								"updateComment",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Comment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inl1c3VmQHltYWlsLmNvbSIsImlkIjoyfQ.tWfOHwujxoKnHHGiUgBppR0z7PIrBhsQXOohlXAUWnujwV_tcHZw0WGsoXIQJrxZ9py-pr8S7927GPCfL2KDWQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/comment/deleteComment/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"comment",
+								"deleteComment",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
